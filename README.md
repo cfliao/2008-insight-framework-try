@@ -1,4 +1,7 @@
 # 2008-insight-framework-try
+
+Test1: 150212
+
 目的 (071102)
 
 1. 將JNDI-based改為embedded，以增加可攜性 (OK)
