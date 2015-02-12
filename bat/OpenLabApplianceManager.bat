@@ -1,0 +1,3 @@
+@echo off
+java -classpath ../bin;../lib/commons-beanutils.jar;../lib/ezmorph-1.0.3.jar;../lib/commons-collections.jar;../lib/spring.jar;../lib/comm.jar;../lib/apache-activemq-4.1.1.jar;../lib/json-lib-2.1-jdk15.jar;../lib/jena.jar;../lib/xml-apis.jar;../lib/xercesImpl.jar;../lib/iri.jar;../lib/icu4j_3_4.jar;../lib/log4j-1.2.14.jar;../lib/commons-logging-1.0.4.jar;../lib/cgjsapi.jar;../lib/commons-lang-2.2.jar;../lib/commons-io-1.3.2.jar s2h.platform.ha.openlab.OpenLabApplianceManager
+pause

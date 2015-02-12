@@ -1,0 +1,1 @@
+jconsole service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?> 
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major> 
+		<minor>0</minor> 
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:message-sender:1</deviceType> 
+		<friendlyName>NTU S2H Admin Node Device</friendlyName> 
+		<manufacturer>National Taiwan University</manufacturer> 
+		<manufacturerURL>http://www.ntu.edu.tw</manufacturerURL> 
+		<modelDescription>NTU S2H Home Admin Node Device</modelDescription> 
+		<modelName>AdminNode</modelName> 
+		<modelNumber>1.0</modelNumber> 
+		<modelURL>http://www.s2h-home.org/platform</modelURL> 
+		<UDN>uuid:NtuS2hAdminNodeDevice</UDN> 
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:message-sender:1</serviceType> 
+				<serviceId>urn:schemas-upnp-org:serviceId:message:1</serviceId> 
+				<SCPDURL>/messageSenderService.xml</SCPDURL> 
+				<controlURL>/service/message/control</controlURL> 
+				<eventSubURL>/service/message/eventSub</eventSubURL> 
+			</service>
+		</serviceList>
+	</device>
+</root>

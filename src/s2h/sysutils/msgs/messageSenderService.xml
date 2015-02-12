@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>0</minor>
+   </specVersion>
+   <actionList>
+      <action>
+         <name>Send</name>
+         <argumentList>
+            <argument>
+               <name>content</name>
+               <direction>in</direction>
+               <relatedStateVariable>content</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>topic</name>
+               <direction>in</direction>
+               <relatedStateVariable>topic</relatedStateVariable>
+            </argument>
+         </argumentList>
+      </action>
+   </actionList>
+   <serviceStateTable>
+      <stateVariable sendEvents="no">
+         <name>content</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>topic</name>
+         <dataType>string</dataType>
+         <allowedValueList>
+            <allowedValue>COMMAND</allowedValue>
+            <allowedValue>COMMAND.DISPLAY</allowedValue>
+            <allowedValue>CONTEXT</allowedValue>
+            <allowedValue>RAW_DATA</allowedValue>
+            <allowedValue>HCI.SR</allowedValue>
+            <allowedValue>HCI.TTS</allowedValue>
+         </allowedValueList>
+      </stateVariable>
+   </serviceStateTable>
+</scpd>

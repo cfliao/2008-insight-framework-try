@@ -1,0 +1,45 @@
+
+Messaging概念
+
+MessageDispatcher
+
+MessageProcessor
+
+PlatformMessage, PlatformTopic
+
+JSON與ContentFactory
+JSON (JavaScript Object Notation)  is a lightweight computer data interchange format. It is a text-based, human-readable format for representing simple data structures and associative arrays (called objects). The JSON format is specified in RFC 4627 by Douglas Crockford. The official Internet media type for JSON is application/json.
+
+The JSON format is often used for transmitting structured data over a network connection in a process called serialization. Its main application is in Ajax web application programming, where it serves as an alternative to the traditional use of the XML format.
+
+Although JSON was based on a subset of the JavaScript programming language (specifically, Standard ECMA-262 3rd Edition—December 1999[1]) and is commonly used with that language, it is considered to be a language-independent data format. Code for parsing and generating JSON data is readily available for a large variety of programming languages. The json.org website provides a comprehensive listing of existing JSON bindings, organized by language.
+
+In December 2005, Yahoo! began offering some of its Web Services optionally in JSON.[2] Google started offering JSON feeds for its GData web protocol in December 2006.[3]
+
+
+Node 繼承體系
+
+NodeState
+
+Node Manager
+
+Node Directory
+
+AgentContainer與AgentNode, Node Manager
+
+AgentRunner
+
+偵錯工具
+
+Hermes JMS ->加入ActiveMQ Library->new ActiveMQ Session
+HMB Shell
+
+應用程式開發
+extends AgentNode
+log寫法
+建構子寫法
+main寫法
+processMessage
+extractData
+處理生命週期
+

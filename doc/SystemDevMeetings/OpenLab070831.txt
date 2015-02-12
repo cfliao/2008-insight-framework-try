@@ -1,0 +1,30 @@
+一、重新確認一下工作分配
+
+Sensor部份
+
+協調:嘉宏學長
+平台整合:思佑
+實作:繼德和他的學弟
+
+WSN Demo
+協調:嘉宏學長
+平台整合:思佑、峻鋒
+Application開發千嘉
+
+Flash整合、國網中心整合:倫中
+
+二、WSN Demo事宜
+
+三、平台教學
+
+Eclipse特殊功能提醒
+OSGi Demo
+學習平台Shell及Moniter
+學習如何佈署及啟動AP
+
+四、排定下次大家工作
+
+1.思佑報平台的Driver架構
+2.倫中報Flash整合架構
+3.千嘉報Application架構
+4.柏銘報Shell、Moniter、硬體及網路架構

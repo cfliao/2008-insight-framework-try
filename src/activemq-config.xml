@@ -1,0 +1,52 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="jmsFactory"
+		class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL">
+			<value>tcp://localhost:61616</value>
+		</property>
+	</bean>
+
+	<bean id="contextTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.CONTEXT" />
+	</bean>
+
+	<bean id="sensorTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.RAW_DATA" />
+	</bean>
+
+	<bean id="commandTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.COMMAND" />
+	</bean>
+
+	<bean id="displayTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.COMMAND.DISPLAY" />
+	</bean>
+
+	<bean id="srTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.HCI.SR" />
+	</bean>
+
+	<bean id="ttsTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.HCI.TTS" />
+	</bean>
+
+	<bean id="adminTopic"
+		class="org.apache.activemq.command.ActiveMQTopic">
+		<constructor-arg value="ssh.ADMIN" />
+	</bean>
+
+	<bean id="commonJmsTemplate"
+		class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="jmsFactory" />
+	</bean>
+</beans>
+

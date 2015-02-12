@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="SensorMeasurement" transaction-type="RESOURCE_LOCAL">
+        <class>s2h.platform.persistence.SensorMeasurement</class>
+        <properties>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/context?useUnicode=true"/>
+            <property name="toplink.jdbc.user" value="root"/>
+            <property name="toplink.jdbc.password" value="ntutest"/>
+           	<property name="toplink.logging.level" value="WARNING" />
+			<property name="toplink.jdbc.native-sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>

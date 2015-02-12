@@ -1,0 +1,10 @@
+MediaFollowMe
+(ssh.CONTEXT){"subject":"USER","location":"LIVINGROOM"}
+
+(ssh.COMMAND.DISPLAY){"id":"DISPLAY1","command":"PLAY","pos":"20.2212"}
+
+(ssh.COMMAND.DISPLAY){"id":"DISPLAY1","command":"PLAY"}
+
+(ssh.COMMAND.DISPLAY){"id":"DISPLAY1","command":"STOP"}
+
+(ssh.COMMAND.DISPLAY){"id":"DISPLAY4","command":"TRANSFER","display_id":"DISPLAY1"}

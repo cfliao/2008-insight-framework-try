@@ -1,0 +1,48 @@
+安裝Windows XP Pro及Office(台大授權版本)
+
+安裝印表機
+
+以下假設JAVA_HOME = C:\Program Files\Java\jdk1.6.0_03\
+
+安裝JDK
+
+1.安裝J2SE 6.0 (JDK6)
+2.我的電腦上按右鍵->進階->環境變數->系統變數->新增JAVA_HOME=C:\Program Files\Java\jdk1.6.0_03
+3.將C:\Program Files\Java\jdk1.6.0_03\bin加到path環境變數中
+
+安裝ActiveMQ
+下傳http://apache.ntu.edu.tw/activemq/apache-activemq/4.1.1/apache-activemq-4.1.1.zip
+解開在c:\servers下
+
+安裝Hermes JMS
+啟動hermes-installer-1.12.jar 
+執行安裝程式
+後面參考video(詳請請詢問try)
+
+安裝CVS (詳請請詢問try)
+下傳:http://prdownloads.sourceforge.net/tortoisecvs/TortoiseCVS-1.8.31.exe
+checkout code: 2008-s2h-platform
+checkout code: 2008-s2h-application
+
+看一下2008-s2h-platform下的doc目錄
+
+安裝Eclipse Europa版本
+
+Lab: 各寫一個簡單的SensorNode、LogicNode及ActuatorNode(詳請請詢問try)
+
+下面可以下週再做
+-----------------------------------
+安裝虛擬COM Port (for Taroko)
+
+1.安裝WSN_VCOM_Setup.exe
+2.調整裝置管理員調成8/N/1/1152200(詳請請詢問try)
+3.將javax.comm.properties拷貝到JAVA_HOME\jre\lib下
+4.將comm.jar拷貝到JAVA_HOME\jre\lib\ext下
+5.win32com.dll拷貝到JAVA_HOME\jre\lib及C:\windows\下
+6.使用s2h.platform.instrument.serial.SerialPortTest測測看
+
+安裝Visual Studio.NET 2005
+安裝語音系統 (請詢問育誠)
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="nodeManager"
+		class="s2h.platform.node.upnp.UPnPNodeManager1">
+
+		<property name="deviceType" value="aircon" />
+		<property name="serviceType" value="aircon" />
+		<property name="friendlyName"
+			value="BL313 Air Conditioner Agent" />
+		<property name="modelName" value="aircon1" />
+	</bean>
+
+</beans>
+

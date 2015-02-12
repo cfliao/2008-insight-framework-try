@@ -1,0 +1,6 @@
+RAW_DATA RDF
+CONTEXT RDF
+COMMAND ¦Û­q
+HCI.SR (Big5)
+HCI.TTS (Big5)
+HCI.DISPLAY (for display manager)

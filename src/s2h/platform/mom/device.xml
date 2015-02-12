@@ -1,0 +1,25 @@
+<?xml version="1.0" ?> 
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major> 
+		<minor>0</minor> 
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:wsn:1</deviceType> 
+		<friendlyName>Taroko Sensor</friendlyName> 
+		<manufacturer>National Taiwan Univ. CSIE Dept.</manufacturer> 
+		<manufacturerURL>http://robotlab.csie.ntu.edu.tw</manufacturerURL> 
+		<modelName>wsn.taroko</modelName> 
+		<modelNumber>1.0</modelNumber> 
+		<modelURL>http://smarthome.csie.org/app/wsn/taroko</modelURL> 
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:wsn:1</serviceType> 
+				<serviceId>urn:schemas-upnp-org:serviceId:wsn-taroko:1</serviceId> 
+				<SCPDURL>s2h/platform/support/service.xml</SCPDURL> 
+				<controlURL>/service/wsn/taroko/control</controlURL> 
+				<eventSubURL>/service/wsn/taroko/eventSub</eventSubURL> 
+			</service>
+		</serviceList>
+	</device>
+</root>

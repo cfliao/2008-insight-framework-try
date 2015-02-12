@@ -1,0 +1,26 @@
+<?xml version="1.0" ?> 
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major> 
+		<minor>0</minor> 
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:aircon:1</deviceType> 
+		<friendlyName>BL313 Air Conditioner Agent</friendlyName> 
+		<manufacturer>National Taiwan Univ. CSIE Dept.</manufacturer> 
+		<manufacturerURL>http://robotlab.csie.ntu.edu.tw</manufacturerURL> 
+		<modelName>aircon.bl313</modelName> 
+		<modelNumber>1.0</modelNumber> 
+		<modelURL>http://smarthome.csie.org/app/aircon/bl313</modelURL> 
+		<UDN>uuid:2ba15164-2cb8-4aad-bf7b-a7a88b038821</UDN> 
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:aircon:1</serviceType> 
+				<serviceId>urn:schemas-upnp-org:serviceId:aircon-bl313:1</serviceId> 
+				<SCPDURL>/s2h/platform/support/service.xml</SCPDURL> 
+				<controlURL>/service/aircon/bl313/control</controlURL> 
+				<eventSubURL>/service/aircon/bl313/eventSub</eventSubURL> 
+			</service>
+		</serviceList>
+	</device>
+</root>

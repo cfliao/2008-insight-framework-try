@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:${MODEL_NAME}:1</deviceType>
+		<friendlyName>${FRIENDLY_NAME}</friendlyName>
+		<manufacturer>National Taiwan Univ. CSIE Dept.</manufacturer>
+		<manufacturerURL>http://robotlab.csie.ntu.edu.tw</manufacturerURL>
+		<modelName>${MODEL_NAME}</modelName>
+		<modelNumber>1.0</modelNumber>
+		<modelURL>http://smarthome.csie.org/app/${MODEL_NAME:URL}</modelURL>
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:${MODEL_NAME:TYPE}:1</serviceType>
+				<serviceId>urn:schemas-upnp-org:serviceId:${MODEL_NAME:ID}:1</serviceId>
+				<SCPDURL>s2h/platform/support/service.xml</SCPDURL>
+				<controlURL>/service/${MODEL_NAME:URL}/control</controlURL>
+				<eventSubURL>/service/${MODEL_NAME:URL}/eventSub</eventSubURL>
+			</service>
+		</serviceList>
+	</device>
+</root>

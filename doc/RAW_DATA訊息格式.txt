@@ -1,0 +1,27 @@
+
+資料庫部份我已經寫好，所有進RAW_DATA的訊息都會記下來
+
+傳送格式如下:
+
+{"type":"taroko", "id":"0", "humidity":"50", "temperature":"30.2",...... }
+
+sensor平台如果是taroko就填taroko，如果是PL-2303就填PL-2303
+id的話填sensor的id，主要是用來搞清楚是誰送來的訊息
+id和type的格式都是字串
+後面的話就是自訂的key:value型式，請記得都要加"引號"，
+另外，傳進來的一定要是數字，例如電流sensor只要on/off就是
+{"type":"taroko", "id":"0", "current":"0"} 或{"type":"taroko", "id":"0", "current":"1"} 
+
+在資料庫中的格式如下:
+
+serial (big int) // 序號，自動產生
+sensor_id (string) 
+sensor_type (string)
+value (double)
+timestamp (timestamp) // 這個會由我的程式自動附加
+
+其它人也請參考
+
+以上
+
+峻鋒

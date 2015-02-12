@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:vcom:1</deviceType>
+		<friendlyName>Voice Command Logic</friendlyName>
+		<manufacturer>National Taiwan Univ. CSIE Dept.</manufacturer>
+		<manufacturerURL>http://robotlab.csie.ntu.edu.tw</manufacturerURL>
+		<modelName>vcom</modelName>
+		<modelNumber>1.0</modelNumber>
+		<modelURL>http://smarthome.csie.org/app/vcom</modelURL>
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:vcom:1</serviceType>
+				<serviceId>urn:schemas-upnp-org:serviceId:vcom:1</serviceId>
+				<SCPDURL>s2h/platform/support/service.xml</SCPDURL>
+				<controlURL>/service/vcom/control</controlURL>
+				<eventSubURL>/service/vcom/eventSub</eventSubURL>
+			</service>
+		</serviceList>
+	</device>
+</root>
